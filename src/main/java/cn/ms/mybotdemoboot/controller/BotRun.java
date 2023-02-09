@@ -88,6 +88,6 @@ public class BotRun {
         JSONArray originalMessage = jsonObject.getJSONArray("originalMessage");
         System.out.println("群组消息切分");
         System.out.println(originalMessage);
-
+        groupUtil.distributeKey(group,originalMessage);
     }
 }
